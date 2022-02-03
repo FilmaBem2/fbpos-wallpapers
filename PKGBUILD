@@ -20,7 +20,7 @@ options=()
 changelog=
 source=(imgs.zip)
 noextract=()
-md5sums=('SKIP')
+md5sums=('56e105210966a5173e5ade219fe7737e')
 validpgpkeys=()
 
 pkgver() {
