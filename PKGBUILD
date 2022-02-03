@@ -29,9 +29,9 @@ pkgver() {
 }
 
 package() {
-    mkdir usr
-    mkdir usr/share
-    mkdir usr/share/wallpapers
-    mkdir usr/share/wallpapers/fbpos
-    install -Dm644 imgs/* "${pkgdir}/usr/share/wallpapers/fbpos/"
+    mkdir "${pkgdir}/usr"
+    mkdir "${pkgdir}/usr/share"
+    mkdir "${pkgdir}/usr/share/wallpapers"
+    mv -f "${srcdir}/imgs" "${srcdir}/fbpos"
+    cp -R "${srcdir}/fbpos" "${pkgdir}/usr/share/wallpapers/"
 }
