@@ -5,7 +5,7 @@ pkgrel=1
 epoch=
 pkgdesc="FBP Wallpapers for FBP OS."
 arch=('x86_64')
-url="https://github.com/FilmaBem2/fbpos-wallpapers-imgs.git"
+url="https://github.com/FilmaBem2/fbpos-wallpapers"
 license=('MIT')
 groups=()
 depends=()
@@ -17,9 +17,8 @@ conflicts=()
 replaces=()
 backup=()
 options=()
-install=${pkgname}.install
 changelog=
-source=("git+$url")
+source=(imgs.zip)
 noextract=()
 md5sums=('SKIP')
 validpgpkeys=()
@@ -31,5 +30,5 @@ pkgver() {
 
 package() {
     cd fbpos-wallpapers
-    install -Dm644 *.jpg "${pkgdir}/usr/share/wallpapers/fbpos/"
+    install -Dm644 imgs/* "${pkgdir}/usr/share/wallpapers/fbpos/"
 }
