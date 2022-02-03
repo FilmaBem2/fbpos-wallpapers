@@ -1,4 +1,4 @@
-# Maintainer:
+# Maintainer: Filma Bem <filmabemtv2@gmail.com>
 pkgname=fbpos-wallpapers
 pkgver=22
 pkgrel=1
