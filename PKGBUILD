@@ -29,6 +29,5 @@ pkgver() {
 }
 
 package() {
-    cd fbpos-wallpapers
     install -Dm644 imgs/* "${pkgdir}/usr/share/wallpapers/fbpos/"
 }
